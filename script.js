@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('http://pywordle.vercel.app/api/dailyword')
+  fetch('https://pywordle.vercel.app/webservice/dailyword')
     .then(response => response.json()) // Convert the response to JSON
     .then(data => {
       // Access the 'word' property from the response data and set it into the HTML element
