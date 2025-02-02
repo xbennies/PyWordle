@@ -4,7 +4,7 @@ const fs = require('fs');
 const cron = require('node-cron');
 const path = require('path');
 const app = express();
-const port = 3000;
+const port = 443;
 
 // Allow all origins for CORS (can be customized later)
 app.use(cors());
@@ -58,5 +58,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
+  console.log(`Server running at https://localhost:${port}`);
 });
